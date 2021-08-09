@@ -38,11 +38,12 @@ func NewChecker(addr string) *checker {
 func (c *checker) Do() error {
 	res, err := c.client.Do(c.request)
 	if err != nil {
-		return errors.New(c.addr + " " + err.Error())
+		return errors.New(c.addr + " --> " + err.Error())
 	}
 	tp := res.Header.Get("Content-Type")
-	if tp == "application/x-mpegURL" || tp == "application/x-mpegurl" || tp == "video/mp2t" || tp == "application/vnd.apple.mpegurl" || tp == "application/octet-stream" {
+	if tp == "application/x-mpegURL" || tp == "application/x-mpegurl" || tp == "video/mp2t" || tp == "application/vnd.apple.mpegurl" || tp == "application/octet-stream" || tp == "audio/x-mpegurl" {
 		return nil
 	}
+	fmt.Println("Content-Type: ", res.Header.Get("Content-Type"))
 	return errors.New(c.addr + " unavailable now...")
 }
