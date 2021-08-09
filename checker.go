@@ -18,9 +18,9 @@ func NewChecker(addr string) *checker {
 		addr: addr,
 	}
 	c.client = &http.Client{
-		Timeout: time.Duration(1 * time.Second),
+		Timeout: time.Duration(5 * time.Second),
 	}
-	req, err := http.NewRequest("Get", c.addr, nil)
+	req, err := http.NewRequest("GET", c.addr, nil)
 	if err != nil {
 		fmt.Println(err)
 		return nil
@@ -38,7 +38,7 @@ func NewChecker(addr string) *checker {
 func (c *checker) Do() error {
 	res, err := c.client.Do(c.request)
 	if err != nil {
-		return err
+		return errors.New(c.addr + " " + err.Error())
 	}
 	tp := res.Header.Get("Content-Type")
 	if tp == "application/x-mpegURL" || tp == "application/x-mpegurl" || tp == "video/mp2t" || tp == "application/vnd.apple.mpegurl" || tp == "application/octet-stream" {

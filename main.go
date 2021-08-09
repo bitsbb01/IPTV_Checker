@@ -7,21 +7,22 @@ import (
 )
 
 func main() {
-	// new pool
-	pool := New(runtime.NumCPU())
-
-	addrs, err := ParseAddresses("")
+	// load and parse m3u file
+	channels, err := ParseAddresses("channels.m3u")
 	if err != nil {
-		fmt.Println(err.Error())
+		fmt.Println(err)
 		return
 	}
+
+	// new pool
+	pool := New(runtime.NumCPU())
 	
 	var wg sync.WaitGroup
-	num := len(addrs)
+	num := len(channels)
 	wg.Add(num)
 
 	for i := 0; i < num; i++ {
-		ck := NewChecker(addrs[i])
+		ck := NewChecker(channels[i])
 		go func()  {
 			pool.Run(ck)
 			wg.Done()
