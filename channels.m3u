@@ -4,7 +4,7 @@
 http://183.207.248.71:80/cntv/live1/HD-8000k-1080P-cctv1/HD-8000k-1080P-cctv1
 
 #EXTINF:-1 tvg-id="cctv2" tvg-name="CCTV2" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV2.png" group-title="央视频道",CCTV-2 财经
-http://183.207.248.71:80/cntv/live1/HD-8000k-1080P-cctv2/HD-8000k-1080P-cctv2
+http://39.134.155.153/PLTV/88888888/224/3221225650/index.m3u8
 
 #EXTINF:-1 tvg-id="cctv3" tvg-name="CCTV3" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV3.png" group-title="央视频道",CCTV-3 综艺
 http://117.169.124.36:6610/ysten-businessmobile/live/cctv-3/1.m3u8
