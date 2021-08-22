@@ -10,13 +10,13 @@ http://39.134.155.153/PLTV/88888888/224/3221225650/index.m3u8
 http://117.169.124.36:6610/ysten-businessmobile/live/cctv-3/1.m3u8
 
 #EXTINF:-1 tvg-id="cctv4" tvg-name="CCTV4" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV4.png" group-title="央视频道",CCTV-4 中文国际
-http://117.169.124.36:6610/ysten-businessmobile/live/cctv-4/1.m3u8
+http://223.110.245.142/ott.js.chinamobile.com/PLTV/3/224/3221227658/index.m3u8
 
 #EXTINF:-1 tvg-id="cctv5" tvg-name="CCTV5" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV5.png" group-title="央视频道",CCTV-5 体育
 http://39.134.66.66/PLTV/88888888/224/3221225818/index.m3u8
 
 #EXTINF:-1 tvg-id="cctv5plus" tvg-name="CCTV5+" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV5+.png" group-title="央视频道",CCTV-5+ 体育赛事
-http://183.207.248.71:80/cntv/live1/HD-8000k-1080P-cctv05plus/HD-8000k-1080P-cctv05plus
+http://223.110.245.142/ott.js.chinamobile.com/PLTV/3/224/3221227685/index.m3u8
 
 #EXTINF:-1 tvg-id="cctv6" tvg-name="CCTV6" tvg-logo="http://epg.51zmt.top:8000/tb1/CCTV/CCTV6.png" group-title="央视频道",CCTV-6 电影
 http://183.207.248.71:80/cntv/live1/cctv-6/cctv-6
